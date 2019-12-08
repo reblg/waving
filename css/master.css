@@ -1,6 +1,7 @@
 .wrapper {
   max-width: 1335px;
   margin: 0 auto;
+  font-family: "Roboto", sans-serif;
 }
 .grid-row {
   display: flex;
@@ -25,13 +26,20 @@
   .grid-item {
     flex-basis: 33.33%;
   }
-  .nav-links {
-    visibility: hidden;
-  }
 }
 @media (max-width: 815px) {
   .grid-item {
     flex-basis: 50%;
+  }
+  .navbar {
+    display: block !important;
+  }
+  .navbar h1 {
+    margin-bottom: 0px;
+  }
+  .nav-links h4 {
+    padding-left: 0px !important;
+    padding-right: 10px;
   }
 }
 @media (max-width: 555px) {
@@ -54,4 +62,18 @@
 
 .nav-links h4 {
   padding-left: 10px;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.nav-links h4 a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.75em;
+  letter-spacing: 1px;
 }

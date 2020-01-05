@@ -86,6 +86,11 @@ h1 {
   margin-top: 300px;
 }
 
+#submissions {
+  display: flex;
+  align-items: center;
+}
+
 #submit-btn {
   height: 100px;
   background-color: #ffbe4f;
@@ -94,10 +99,8 @@ h1 {
   align-items: center;
   justify-content: space-around;
   border-radius: 50%;
-}
-
-#submit-btn {
   color: #00a2ff;
+  margin-right: 20px;
 }
 
 #submit-btn:hover {
@@ -115,4 +118,32 @@ h1 {
 #submit-btn:hover:before {
   content: "click here";
   color: #ffbe4f;
+}
+
+#back-btn {
+  height: 100px;
+  background-color: #00a2ff;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50%;
+  color: #ffbe4f;
+}
+
+#back-btn:hover {
+  background-color: #ffbe4f;
+}
+
+#back-btn:hover a {
+  color: #00a2ff;
+}
+
+#back-btn:hover span {
+  display: none;
+}
+
+#back-btn:hover:before {
+  content: "to videos";
+  color: #00a2ff;
 }

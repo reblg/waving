@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: 1335px;
+  /* max-width: 1335px; */
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
 }
@@ -47,10 +47,18 @@ a {
     padding-left: 0px !important;
     padding-right: 10px;
   }
+  .info-section {
+    width: 75%;
+    margin-top: 100px;
+  }
 }
 @media (max-width: 555px) {
   .grid-item {
     flex-basis: 100%;
+  }
+  .info-section {
+    width: 75%;
+    margin-top: 100px;
   }
 }
 
@@ -81,26 +89,31 @@ h1 {
 
 .info-section {
   height: 100vh;
-  width: 40%;
+  width: 50%;
   margin: auto;
   margin-top: 300px;
 }
 
+.info-section p {
+  font-size: 1em;
+}
+
 #submissions {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
 }
 
 #submit-btn {
-  height: 100px;
+  height: 6.5rem;
   background-color: #ffbe4f;
-  width: 100px;
+  width: 6.5rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 50%;
   color: #00a2ff;
-  margin-right: 20px;
+  margin-right: 1rem;
 }
 
 #submit-btn:hover {
@@ -121,9 +134,9 @@ h1 {
 }
 
 #back-btn {
-  height: 100px;
+  height: 6.5rem;
   background-color: #00a2ff;
-  width: 100px;
+  width: 6.5rem;
   display: flex;
   align-items: center;
   justify-content: space-around;

@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .wrapper {
   /* max-width: 1335px; */
   margin: 0 auto;
@@ -37,16 +41,6 @@ a {
   .grid-item {
     flex-basis: 50%;
   }
-  .navbar {
-    display: block !important;
-  }
-  .navbar h1 {
-    margin-bottom: 0px;
-  }
-  .nav-links h4 {
-    padding-left: 0px !important;
-    padding-right: 10px;
-  }
   .info-section {
     width: 75%;
     margin-top: 100px;
@@ -62,12 +56,11 @@ a {
   }
 }
 
-.navbar {
+#navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 10px;
-  background-color: white;
 }
 
 .nav-links {
@@ -106,23 +99,27 @@ h1 {
 
 #submit-btn {
   height: 6.5rem;
-  background-color: #ffbe4f;
+  background-color: white;
   width: 6.5rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 50%;
-  color: #00a2ff;
+  color: #ff8b42;
   margin-right: 1rem;
+  /* border: 1px solid #ff8b42; */
 }
 
 #submit-btn:hover {
-  background-color: #00a2ff;
+  background-color: #ff8b42;
 }
 
 #submit-btn:hover a {
-  color: #ffbe4f;
+  color: white;
 }
+
+/* #ffb840 (orange)
+#ff8b42 (red) */
 
 #submit-btn:hover span {
   display: none;
@@ -130,26 +127,30 @@ h1 {
 
 #submit-btn:hover:before {
   content: "click here";
-  color: #ffbe4f;
+  color: white;
 }
 
 #back-btn {
   height: 6.5rem;
-  background-color: #00a2ff;
+  background-color: white;
   width: 6.5rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   border-radius: 50%;
-  color: #ffbe4f;
+  color: #006eff;
+  margin-right: 1rem;
+  /* border: 1px solid #006eff; */
 }
 
+/* #2684ff - lighter blue */
 #back-btn:hover {
-  background-color: #ffbe4f;
+  background-color: #006eff;
+  /* border: 1px solid #006eff; */
 }
 
 #back-btn:hover a {
-  color: #00a2ff;
+  color: white;
 }
 
 #back-btn:hover span {
@@ -158,5 +159,122 @@ h1 {
 
 #back-btn:hover:before {
   content: "to videos";
-  color: #00a2ff;
+  color: white;
+}
+
+#calc-btn {
+  height: 6.5rem;
+  background-color: white;
+  width: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50%;
+  color: #ffd333;
+  margin-right: 1rem;
+  /* border: 1px solid #ffd333; */
+}
+
+/* #2684ff - lighter blue */
+#calc-btn:hover {
+  background-color: #ffd333;
+  /* border: 1px solid #ffd333; */
+}
+
+#calc-btn:hover a {
+  color: white;
+}
+
+#calc-btn:hover span {
+  display: none;
+}
+
+#calc-btn:hover:before {
+  content: "sunset";
+  color: white;
+}
+
+.bold-text {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#navbar-sticky {
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  /* height: 70px; */
+  top: 0;
+}
+
+#navbar-sticky h1 {
+  padding-left: 10px;
+}
+
+.navbar-sticky-links {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.navbar-sticky-links a {
+  padding-left: 1em;
+  font-weight: 400;
+}
+
+.hidden {
+  display: none;
+}
+
+#dropbtn {
+  background-color: white;
+  color: white;
+  border: none;
+  visibility: hidden;
+}
+
+#dropbtn img {
+  color: #767676;
+}
+
+#dropbtn:focus {
+  border: none !important;
+}
+
+.dropdown-list {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  right: 0;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 125px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  color: #767676;
+  visibility: visible;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
 }

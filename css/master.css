@@ -278,3 +278,8 @@ h1 {
 .show {
   display: block;
 }
+
+#credits-section {
+  margin-top: 75px;
+
+}
